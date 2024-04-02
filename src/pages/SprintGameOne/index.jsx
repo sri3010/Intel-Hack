@@ -20,14 +20,14 @@ export default function SprintGameOnePage() {
                 <Img
                   src="images/img_image_30.png"
                   alt="imagethirty_one"
-                  className="h-[400px] w-[200%] md:h-auto object-cover"
+                  className="h-[200px] w-[200%] md:h-auto object-cover"
                 />
               </div>
               <div className="flex flex-col items-start mr-[13px] gap-[29px] md:mr-0 flex-1">
                 <div className="flex flex-col self-stretch">
                   <div className="flex items-start gap-2.5">
                     <Text size="3xl" as="p" className="tracking-[-1.92px]">
-                      Sprint
+                      Quiz
                     </Text>
                     <Button
                       color="blue_gray_100_01"
@@ -38,8 +38,7 @@ export default function SprintGameOnePage() {
                     </Button>
                   </div>
                   <Heading as="h1" className="tracking-[-0.64px] !font-semibold !leading-[140%]">
-                    Trains the skill of fast translation. You have to choose if the translation corresponds to the
-                    suggested word.
+                    Get started with your personal math quiz!
                   </Heading>
                 </div>
                 <div className="flex flex-col self-stretch gap-[9px]">
@@ -49,13 +48,13 @@ export default function SprintGameOnePage() {
                   <div className="flex justify-between pr-[69px] gap-5 md:pr-5">
                     <Heading
                       as="h3"
-                      className="flex justify-center items-center h-[44px] !text-green-400 tracking-[-0.64px] border-green-400 border-[3px] border-solid text-center rounded-[50%]"
+                      className="flex justify-center items-center h-[44px] w-[44px] !text-green-400 tracking-[-0.64px] border-green-400 border-[3px] border-solid text-center rounded-[50%]"
                     >
                       A1
                     </Heading>
                     <Heading
                       as="h4"
-                      className="flex justify-center items-center h-[44px] !text-lime-700 tracking-[-0.64px] border-lime-700 border-[3px] border-solid text-center rounded-[50%]"
+                      className="flex justify-center items-center h-[44px] w-[44px] !text-lime-700 tracking-[-0.64px] border-lime-700 border-[3px] border-solid text-center rounded-[50%]"
                     >
                       A2
                     </Heading>
@@ -67,13 +66,13 @@ export default function SprintGameOnePage() {
                     </Heading>
                     <Heading
                       as="h6"
-                      className="flex justify-center items-center h-[44px] !text-pink-800 tracking-[-0.64px] border-pink-800 border-[3px] border-solid text-center rounded-[50%]"
+                      className="flex justify-center items-center h-[44px] w-[44px]  !text-pink-800 tracking-[-0.64px] border-pink-800 border-[3px] border-solid text-center rounded-[50%]"
                     >
                       B2
                     </Heading>
                     <Heading
                       as="h6"
-                      className="flex justify-center items-center h-[44px] !text-purple-400 tracking-[-0.64px] border-purple-400 border-[3px] border-solid text-center rounded-[50%]"
+                      className="flex justify-center items-center h-[44px] w-[44px]  !text-purple-400 tracking-[-0.64px] border-purple-400 border-[3px] border-solid text-center rounded-[50%]"
                     >
                       C1
                     </Heading>
@@ -81,7 +80,7 @@ export default function SprintGameOnePage() {
                       color="blue_gray_400_01"
                       size="4xl"
                       variant="outline"
-                      className="tracking-[-0.64px] font-bold min-w-[43px] rounded-[21px]"
+                      className="flex justify-center items-center h-[44px] w-[44px] tracking-[-0.64px] border-[3px] border-solid text-center rounded-[50%]"
                     >
                       C2
                     </Button>

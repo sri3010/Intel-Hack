@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Button, Heading, Img, Text } from "./..";
 
 export default function Header4({ ...props }) {
@@ -7,14 +8,15 @@ export default function Header4({ ...props }) {
       <div className="flex md:flex-col justify-between items-center w-full gap-5">
         <div className="flex justify-between items-start w-[40%] md:w-full gap-5">
           <Text size="xs" as="p" className="tracking-[-0.33px] !text-[16.39px] !font-normal">
-            GlobalTalk
+            Edueteens
           </Text>
           <div className="h-[16px] w-px mt-[3px] bg-gray-300" />
-          <a href="#">
+          {/* Update the Home link to use Link component */}
+          <Link to="/">
             <Heading as="h6" className="!text-gray-700 tracking-[-0.66px] !text-[16.55px] !font-semibold">
-              Main
+              Home
             </Heading>
-          </a>
+          </Link>
           <a href="#">
             <Heading as="h6" className="!text-gray-700 tracking-[-0.66px] !text-[16.55px] !font-semibold">
               Guide

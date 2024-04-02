@@ -3,8 +3,6 @@ import { Helmet } from "react-helmet";
 import { Button, Text, Heading, Img } from "../../components";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import SprintGameFourColumniknow from "../../components/SprintGameFourColumniknow";
-import SprintGameFourRow from "../../components/SprintGameFourRow";
 
 export default function SprintGameFourPage() {
   return (
@@ -27,7 +25,7 @@ export default function SprintGameFourPage() {
                 <div className="flex flex-col w-[48%] sm:w-full gap-[19px]">
                   <div className="flex flex-col items-start gap-0.5">
                     <Text as="p" className="tracking-[-1.28px]">
-                      Your Sprint
+                      Your Score
                     </Text>
                     <a href="#">
                       <Heading as="h1" className="tracking-[-0.64px] !font-semibold">
@@ -70,7 +68,7 @@ export default function SprintGameFourPage() {
                         </Text>
                       </div>
                       <Heading as="h5" className="mb-1 tracking-[0.32px] !font-semibold">
-                        words
+                        Solved
                       </Heading>
                     </div>
                   </div>
@@ -90,43 +88,7 @@ export default function SprintGameFourPage() {
                 </Button>
               </div>
             </div>
-            <div className="flex md:flex-row sm:flex-col w-[48%] md:w-full gap-10 p-[34px] md:p-5 bg-white-A700 shadow-sm rounded-[14px]">
-              <div className="flex flex-col w-[43%] sm:w-full mb-[5px] ml-[5px] gap-[22px] sm:mb-0 sm:ml-0">
-                <div className="flex items-start gap-2.5">
-                  <Text as="p" className="tracking-[-1.28px]">
-                    I know
-                  </Text>
-                  <Button shape="round" className="mt-[9px] tracking-[-0.48px] font-semibold min-w-[66px]">
-                    15 words
-                  </Button>
-                </div>
-                <div className="flex flex-col gap-3.5">
-                  <div className="flex justify-between items-start gap-5 flex-1">
-                    <SprintGameFourRow className="flex justify-between items-center gap-5" />
-                    <div className="h-[34px] w-[6px] bg-gray-300 rounded-[50%]" />
-                  </div>
-                  <SprintGameFourRow
-                    lone="anniversary"
-                    solitaire="- anniversaire"
-                    className="flex justify-between items-center mr-1 gap-5 md:mr-0"
-                  />
-                  <SprintGameFourRow className="flex justify-between items-center mr-[94px] gap-5 md:mr-0" />
-                  <SprintGameFourRow
-                    lone="anniversary"
-                    solitaire="- anniversaire"
-                    className="flex justify-between items-center mr-1 gap-5 md:mr-0"
-                  />
-                  <SprintGameFourRow
-                    solitaire="-  solitaire"
-                    className="flex justify-between items-center mr-[90px] gap-5 md:mr-0"
-                  />
-                </div>
-              </div>
-              <SprintGameFourColumniknow
-                iknow="I don&#39;t know"
-                className="flex flex-col mb-[5px] mr-1 gap-[22px] sm:mb-0 sm:mr-0 flex-1"
-              />
-            </div>
+
           </div>
         </div>
         <Footer className="p-[37px] sm:p-5 bg-gray-100" />

@@ -21,7 +21,7 @@ export default function AboutOnePage() {
                 <div className="flex flex-col items-start w-full gap-1">
                   <div className="flex items-start gap-3.5">
                     <Text as="p" className="tracking-[-1.28px]">
-                      Alex
+                      Shree
                     </Text>
                     <Button
                       color="cyan_800"

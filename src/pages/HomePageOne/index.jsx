@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Button, Heading, Text, Img } from "../../components";
 import Footer1 from "../../components/Footer1";
 import Header3 from "../../components/Header3";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 export default function HomePageOnePage() {
   return (
@@ -140,7 +141,7 @@ export default function HomePageOnePage() {
               </div>
             </div>
           </div>
-          <div className="flex md:flex-col justify-evenly items-center pt-[26px] gap-[26px] sm:pt-5 bg-gray-100">
+          <div className="flex md:flex-col items-center pl-[95px] pr-14 gap-5 py-[95px] md:p-5 bg-gray-100">
             <div className="flex flex-col items-start w-[25%] md:w-full gap-[33px] md:p-5">
               <div className="flex flex-col self-stretch gap-[30px]">
                 <Text size="3xl" as="p" className="tracking-[-1.92px]">
@@ -150,11 +151,15 @@ export default function HomePageOnePage() {
                   Traditional and new effective approaches to word study
                 </Heading>
               </div>
-              <Button size="4xl" className="sm:px-5 tracking-[-0.64px] font-bold min-w-[131px] rounded-[22px]">
-                Textbook →
-              </Button>
+              {/* Use Link component to navigate to SprintGameOnePage */}
+              <Link to="/ClassbookOne">
+                <Button size="4xl" className="sm:px-5 tracking-[-0.64px] font-bold min-w-[131px] rounded-[22px]">
+                  Textbook →
+                </Button>
+              </Link>
+
             </div>
-            <Img
+          <Img
               src="images/img_image_2.png"
               alt="imagetwoone_one"
               className="w-[30%] md:w-full md:h-auto object-cover"
@@ -186,3 +191,5 @@ export default function HomePageOnePage() {
     </>
   );
 }
+
+

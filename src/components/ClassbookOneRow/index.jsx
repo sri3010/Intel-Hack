@@ -2,7 +2,7 @@ import React from "react";
 import { Heading, Img } from "./..";
 
 export default function ClassbookOneRow({
-  imagefiftyfive = "images/img_image_55_336x337.png",
+  imagefiftyfive = "images/add.jpg",
   zero = "5",
   zeroone = "1",
   zerotwo = "0",
